@@ -13,8 +13,11 @@ namespace KatlaSport.Services.ProductManagement
             CreateMap<DataAccessProductCategory, ProductCategoryListItem>();
             CreateMap<DataAccessProduct, ProductCategoryProductListItem>();
 
-            // TODO STEP 2 - Change the mapping below.
-            CreateMap<DataAccessProduct, Product>();
+            CreateMap<DataAccessProduct, Product>()
+                .ForMember(li => li.Description,
+                    opt => opt.MapFrom(p => p.Discription == null ? string.Empty : p.Discription))
+                .ForMember(li => li.ManufacturerCode,
+                    opt => opt.MapFrom(p => p.ManufacturerCode == null ? string.Empty : p.ManufacturerCode));
 
             CreateMap<DataAccessProduct, ProductListItem>()
                 .ForMember(li => li.CategoryCode, opt => opt.MapFrom(p => p.Category.Code));

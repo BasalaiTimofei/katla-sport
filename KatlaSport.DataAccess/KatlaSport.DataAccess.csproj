@@ -61,9 +61,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="**\*.cs" Exclude="obj\Debug\*.cs;obj\Release\*.cs;Migrations\*.*" />
-    <Compile Include="Migrations\201810111315298_AddCategoryDescription.cs" />
-    <Compile Include="Migrations\201810111315298_AddCategoryDescription.Designer.cs">
-      <DependentUpon>201810111315298_AddCategoryDescription.cs</DependentUpon>
+    <Compile Include="Migrations\201810112355578_AddProductDescriptionManCodePrice.cs" />
+    <Compile Include="Migrations\201810112355578_AddProductDescriptionManCodePrice.Designer.cs">
+      <DependentUpon>201810112355578_AddProductDescriptionManCodePrice.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
   </ItemGroup>
@@ -75,8 +75,8 @@
     <Analyzer Include="..\packages\StyleCop.Analyzers.1.0.2\analyzers\dotnet\cs\StyleCop.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201810111315298_AddCategoryDescription.resx">
-      <DependentUpon>201810111315298_AddCategoryDescription.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201810112355578_AddProductDescriptionManCodePrice.resx">
+      <DependentUpon>201810112355578_AddProductDescriptionManCodePrice.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
