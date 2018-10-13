@@ -36,11 +36,11 @@ namespace KatlaSport.Services.ProductManagement
 
             foreach (var category in categories)
             {
-                category.ProductCount = await _context.Products.Where(p => p.CategoryId == category.Id).CountAsync(); 
+                category.ProductCount = await _context.Products.Where(p => p.CategoryId == category.Id).CountAsync();
             }
 
             return categories;
-        } 
+        }
 
         /// <inheritdoc/>
         public async Task<ProductCategory> GetCategoryAsync(int categoryId)
