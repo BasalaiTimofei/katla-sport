@@ -8,7 +8,7 @@ using DbHive = KatlaSport.DataAccess.ProductStoreHive.StoreHive;
 namespace KatlaSport.Services.HiveManagement
 {
     /// <summary>
-    /// Represents a hive service.
+    /// Represents a hive service. 
     /// </summary>
     public class HiveService : IHiveService
     {
