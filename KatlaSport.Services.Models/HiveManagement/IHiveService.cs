@@ -8,7 +8,6 @@ namespace KatlaSport.Services.HiveManagement
     /// </summary>
     public interface IHiveService
     {
-
         /// <summary>
         /// Gets a hive list
         /// </summary>
