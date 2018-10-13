@@ -37,7 +37,7 @@ namespace KatlaSport.Services.ProductManagement
             // TODO STEP 3 - Add code for setting "ProductCount" property for each category here.
 
             return categories;
-        }
+        } 
 
         /// <inheritdoc/>
         public async Task<ProductCategory> GetCategoryAsync(int categoryId)
