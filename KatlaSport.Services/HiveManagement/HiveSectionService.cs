@@ -65,7 +65,7 @@ namespace KatlaSport.Services.HiveManagement
                 throw new RequestedResourceHasConflictException("code");
             }
 
-            var dbHiveSection = Mapper.Map<UpdateHiveSectionRequest, StoreHiveSection>(createRequest);
+            DbHiveSection dbHiveSection = Mapper.Map<UpdateHiveSectionRequest, DbHiveSection>(createRequest);
             dbHiveSection.CreatedBy = _userContext.UserId;
             dbHiveSection.LastUpdatedBy = _userContext.UserId;
 
@@ -94,7 +94,7 @@ namespace KatlaSport.Services.HiveManagement
             var dbHiveSection = dbHivesSections.FirstOrDefault();
             Mapper.Map(updateRequest, dbHiveSection);
             dbHiveSection.LastUpdatedBy = _userContext.UserId;
-            dbHiveSection.LastUpdated = DateTime.UtcNow;
+            dbHiveSection.StoreHiveId = updateRequest.HiveId;
             await _context.SaveChangesAsync();
             return Mapper.Map<HiveSection>(dbHiveSection);
         }
