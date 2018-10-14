@@ -108,7 +108,7 @@ namespace KatlaSport.WebApi.Controllers
 
         [HttpDelete]
         [Route("{id:int:min(1)}")]
-        [SwaggerResponse(HttpStatusCode.NoContent, Description = "Deletes an existed product.")]
+        [SwaggerResponse(HttpStatusCode.NoContent, Description = "Deletes an existed hive.")]
         [SwaggerResponse(HttpStatusCode.NotFound)]
         [SwaggerResponse(HttpStatusCode.BadRequest)]
         [SwaggerResponse(HttpStatusCode.Conflict)]
