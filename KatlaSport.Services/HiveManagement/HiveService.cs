@@ -93,6 +93,7 @@ namespace KatlaSport.Services.HiveManagement
 
             Mapper.Map(updateRequest, dbHive);
             dbHive.LastUpdatedBy = _userContext.UserId;
+            dbHive.LastUpdated = DateTime.UtcNow;
 
             await _context.SaveChangesAsync();
 
