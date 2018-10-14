@@ -39,28 +39,23 @@
           <button type="button" class="btn btn-primary">Back</button>
         </div>
 
-        <div class="btn-group mr-2" role="group" aria-label="Save group" (click)="onSave()">
+        <div class="btn-group mr-2" role="group" aria-label="Save group" (click)="onSubmit()">
           <button type="button" class="btn btn-primary">Save</button>
         </div>
+
+        <div class="btn-group mr-2" role="group" aria-label="Delete group" *ngIf="existed" (click)="onDelete(hive.id)">
+            <button type="button" class="btn btn-danger">Delete</button>
+        </div>
+
+        <div class="btn-group mr-2" role="group" aria-label="Undelete group" *ngIf="hive.isDeleted" (click)="onUndelete(hive.id)">
+            <button type="button" class="btn btn-primary">Undelete</button>
+        </div>
+
 
         <div class="btn-group mr-2" role="group" aria-label="Purge group" (click)="onPurge()">
             <button type="button" class="btn btn-group">Purge</button>
         </div>
 
       </span>
-
-      <div *ngIf="exsisted">
-        <span class="btn-toolbar" role="toolbar" aria-label="Hive action buttons" style="display: block; white-space:nowrap;">
-
-            <div class="btn-group mr-2" role="group" aria-label="Delete group" (click)="onDelete(hive.id)">
-                <button type="button" class="btn btn-danger">Delete</button>
-            </div>
-
-            <div class="btn-group mr-2" role="group" aria-label="Undelete group" (click)="onUndelete(hive.id)">
-                <button type="button" class="btn btn-primary">Undelete</button>
-            </div>
-
-          </span>
-      </div>
   </form>
 </div>
