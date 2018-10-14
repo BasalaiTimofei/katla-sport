@@ -24,20 +24,34 @@ namespace KatlaSport.DataAccess.ProductCatalogue
         /// </summary>
         public string Code { get; set; }
 
-       /// <summary>
+        /// <summary>
+<<<<<<< HEAD
         /// Gets or sets a product description.
         /// </summary>
         public string Description { get; set; }
 
         /// <summary>
         /// Gets or sets a product manufacturer code.
+=======
+        /// Gets or sets a product Discription.
+        /// </summary>
+        public string Discription { get; set; }
+
+        /// <summary>
+        /// Gets or sets a product Manufacturer Code.
+>>>>>>> 1039ec6a5d1a59f650c07c27ac58124a582f34c6
         /// </summary>
         public string ManufacturerCode { get; set; }
 
         /// <summary>
+<<<<<<< HEAD
         /// Gets or sets a product price.
+=======
+        /// Gets or sets a product Price.
+>>>>>>> 1039ec6a5d1a59f650c07c27ac58124a582f34c6
         /// </summary>
         public decimal? Price { get; set; }
+
         /// <summary>
         /// Gets or sets an ID for the product category the product belongs to.
         /// </summary>

@@ -24,17 +24,31 @@ namespace KatlaSport.Services.ProductManagement
         public int CategoryId { get; set; }
 
         /// <summary>
+<<<<<<< HEAD
         /// Gets or sets a product description.
         /// </summary>
         public string Description { get; set; }
 
         /// <summary>
         /// Gets or sets a product manufacturer code.
+=======
+        /// Gets or sets product Discription
+        /// </summary>
+        public string Discription { get; set; }
+
+        /// <summary>
+        /// Gets or sets products ManufacturerCode
+>>>>>>> 1039ec6a5d1a59f650c07c27ac58124a582f34c6
         /// </summary>
         public string ManufacturerCode { get; set; }
 
         /// <summary>
+<<<<<<< HEAD
         /// Gets or sets a product price.
+=======
+        /// Gets or sets product Price
+>>>>>>> 1039ec6a5d1a59f650c07c27ac58124a582f34c6
         /// </summary>
-        public decimal Price { get; set; }    }
+        public decimal Price { get; set; }
+    }
 }

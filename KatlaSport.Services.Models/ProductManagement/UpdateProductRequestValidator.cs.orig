@@ -16,8 +16,13 @@ namespace KatlaSport.Services.ProductManagement
             RuleFor(r => r.Code).Length(5);
             RuleFor(r => r.CategoryId).GreaterThan(0);
 
-       RuleFor(r => r.ManufacturerCode).Length(4, 10);
+<<<<<<< HEAD
+            RuleFor(r => r.ManufacturerCode).Length(4, 10);
             RuleFor(r => r.Description).Length(300);
+=======
+            RuleFor(r => r.Discription).Length(0, 300);
+            RuleFor(r => r.ManufacturerCode).Length(4, 10);
+>>>>>>> 1039ec6a5d1a59f650c07c27ac58124a582f34c6
             RuleFor(r => r.Price).GreaterThanOrEqualTo(0);
         }
     }

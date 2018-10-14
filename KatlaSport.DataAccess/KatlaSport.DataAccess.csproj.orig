@@ -61,9 +61,16 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="**\*.cs" Exclude="obj\Debug\*.cs;obj\Release\*.cs;Migrations\*.*" />
+<<<<<<< HEAD
     <Compile Include="Migrations\201810130024327_AddProductDescriptionManCodePrice.cs" />
     <Compile Include="Migrations\201810130024327_AddProductDescriptionManCodePrice.Designer.cs">
-      <DependentUpon>201810130024327_AddProductDescriptionManCodePrice.cs</DependentUpon> </Compile>
+      <DependentUpon>201810130024327_AddProductDescriptionManCodePrice.cs</DependentUpon>
+=======
+    <Compile Include="Migrations\201810112355578_AddProductDescriptionManCodePrice.cs" />
+    <Compile Include="Migrations\201810112355578_AddProductDescriptionManCodePrice.Designer.cs">
+      <DependentUpon>201810112355578_AddProductDescriptionManCodePrice.cs</DependentUpon>
+>>>>>>> 1039ec6a5d1a59f650c07c27ac58124a582f34c6
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -74,8 +81,13 @@
     <Analyzer Include="..\packages\StyleCop.Analyzers.1.0.2\analyzers\dotnet\cs\StyleCop.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-   <EmbeddedResource Include="Migrations\201810130024327_AddProductDescriptionManCodePrice.resx">
+<<<<<<< HEAD
+    <EmbeddedResource Include="Migrations\201810130024327_AddProductDescriptionManCodePrice.resx">
       <DependentUpon>201810130024327_AddProductDescriptionManCodePrice.cs</DependentUpon>
+=======
+    <EmbeddedResource Include="Migrations\201810112355578_AddProductDescriptionManCodePrice.resx">
+      <DependentUpon>201810112355578_AddProductDescriptionManCodePrice.cs</DependentUpon>
+>>>>>>> 1039ec6a5d1a59f650c07c27ac58124a582f34c6
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
